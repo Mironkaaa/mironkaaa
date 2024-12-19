@@ -4298,11 +4298,11 @@
             window.addEventListener("resize", h), h();
             class d {
                 spawn(e) {
-                    this.x = e.x, this.y = e.y, this.angle = Math.atan2(this.y, this.x), this.radius = .15, this.speed = .7 + 8.3 * Math.random()
+                    this.x = e.x, this.y = e.y, this.angle = Math.atan2(this.y, this.x), this.radius = .1, this.speed = .4 + 3.3 * Math.random()
                 }
                 update(e) {
                     var t = this.speed * e;
-                    this.x += Math.cos(this.angle) * t, this.y += Math.sin(this.angle) * t, this.radius += .0055 * t
+                    this.x += Math.cos(this.angle) * t, this.y += Math.sin(this.angle) * t, this.radius += .0035 * t
                 }
             }
             var p = Array(200).fill(null).map(() => new d),
@@ -8680,4 +8680,3 @@ Multibox Profile
     document.getElementById('overlay').appendChild(vv)
 
 }(window);
-
